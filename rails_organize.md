@@ -57,6 +57,7 @@ end
 ```
 
 ## Ссылки
+- [Технические долги](http://blog.byndyu.ru/2008/12/blog-post.html)
 - [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
 - [Rails Club 2014: Круглый стол "Где хранить бизнес-логику в RoR приложениях?"](https://www.youtube.com/watch?v=Rqa0cn_uzuc)
 - [RailsConf 2015 - What Comes After MVC](https://www.youtube.com/watch?v=uFpXKLSREQo&index=14&list=PLE7tQUdRKcybf82pLlMnPZjAMMMV5DJsK)
