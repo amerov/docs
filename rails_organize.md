@@ -55,6 +55,26 @@ class ActivateUserService
   
 end
 ```
+### Типы сервисов
+- Interactor содержит логику взаимодествия с пользователем.
+- Servise  пример:
+```ruby
+class CalcPriceService
+ 
+   def initialize
+     prepare params ...
+   end
+   
+   def execute
+     explicit pure logic
+   end
+   
+   private 
+  
+   # infrastructure methods
+   
+ end
+ ```
 
 ## Ссылки
 - [Технические долги](http://blog.byndyu.ru/2008/12/blog-post.html)
