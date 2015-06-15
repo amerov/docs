@@ -58,6 +58,8 @@ end
 
 ## Ссылки
 - [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
+- [Rails Club 2014: Круглый стол "Где хранить бизнес-логику в RoR приложениях?"](https://www.youtube.com/watch?v=Rqa0cn_uzuc)
 - [RailsConf 2015 - What Comes After MVC](https://www.youtube.com/watch?v=uFpXKLSREQo&index=14&list=PLE7tQUdRKcybf82pLlMnPZjAMMMV5DJsK)
 - [Refactoring with Hexagonal Rails](https://www.agileplannerapp.com/blog/building-agile-planner/refactoring-with-hexagonal-rails)
 - [HEXAGONAL ARCHITECTURE FOR RAILS DEVELOPERS](http://victorsavkin.com/post/42542190528/hexagonal-architecture-for-rails-developers)
+[The Clean Architecture](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html)
