@@ -1,11 +1,15 @@
-# Архитектура Rails проектов
+# Архитектура Rails-проектов
 
 ## Модели
 - Модель это класс описывающий данные. в моделях содержится только объявление связей, аннотации и валидация
 - Валидация, которая используется только в контексте форм, выносится в `FormObject`
-- Презентационная логика выносится в  декораторы https://github.com/drapergem/draper
+- Презентационная логика выносится вдекораторы https://github.com/drapergem/draper
 - Скоупы выносятся в Репозитории https://github.com/paulrayner/ddd_sample_app_ruby#repository-pattern-in-ruby http://commandercoriander.net/blog/2014/10/02/isolating-active-record/
 - Бизнес логика выносится в сервис-классы 
+
+## The Dependency Inversion Principe
+-- Высокоуровневые компоненты не должны зависеть от низкоуровневых компонент.
+И те, и те должны зависеть от абстракций.
 
 ## Контроллеры
 - В контроллерах только логика `render`, `redirect_to`
@@ -56,8 +60,8 @@ class ActivateUserService
 end
 ```
 ### Типы сервисов
-- Interactor содержит логику взаимодествия с пользователем.
-- Servise  пример:
+- Interactor содержит логику взаимодествия с пользователем (User Story).
+- Servise пример:
 ```ruby
 class CalcPriceService
  
@@ -77,6 +81,7 @@ class CalcPriceService
  ```
 
 ## Ссылки
+
 - [Технические долги](http://blog.byndyu.ru/2008/12/blog-post.html)
 - [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
 - [Rails Club 2014: Круглый стол "Где хранить бизнес-логику в RoR приложениях?"](https://www.youtube.com/watch?v=Rqa0cn_uzuc)
