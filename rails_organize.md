@@ -109,4 +109,4 @@ end
 - [RailsConf 2015 - What Comes After MVC](https://www.youtube.com/watch?v=uFpXKLSREQo&index=14&list=PLE7tQUdRKcybf82pLlMnPZjAMMMV5DJsK)
 - [Refactoring with Hexagonal Rails](https://www.agileplannerapp.com/blog/building-agile-planner/refactoring-with-hexagonal-rails)
 - [HEXAGONAL ARCHITECTURE FOR RAILS DEVELOPERS](http://victorsavkin.com/post/42542190528/hexagonal-architecture-for-rails-developers)
-[The Clean Architecture](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+- [The Clean Architecture](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html)
