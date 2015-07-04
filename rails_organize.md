@@ -3,7 +3,7 @@
 ## Модели
 - Модель это класс описывающий данные. в моделях содержится только объявление связей, аннотации и валидация
 - Валидация, которая используется только в контексте форм, выносится в `FormObject`
-- Презентационная логика выносится вдекораторы https://github.com/drapergem/draper
+- Презентационная логика выносится в декораторы https://github.com/drapergem/draper
 - Скоупы выносятся в Репозитории https://github.com/paulrayner/ddd_sample_app_ruby#repository-pattern-in-ruby http://commandercoriander.net/blog/2014/10/02/isolating-active-record/
 - Бизнес логика выносится в сервис-классы 
 
@@ -61,6 +61,27 @@ end
 ```
 ### Типы сервисов
 - Interactor содержит логику взаимодествия с пользователем (User Story).
+```ruby
+class UserRegistrationInteractor
+
+  def initialize(params)
+    prepare and assert params...
+  end
+  
+  def execute
+     core logic...
+     raise StandartError 'error message'
+     # в контроллере ловим исключение
+  end
+  
+  private
+  //replace temp with query methods
+  // not core logic methods
+  def some_method
+    ...
+  end
+end
+```
 - Servise пример:
 ```ruby
 class CalcPriceService
@@ -69,7 +90,7 @@ class CalcPriceService
      prepare params ...
    end
    
-   def execute
+   def call
      explicit pure logic
    end
    
@@ -77,11 +98,11 @@ class CalcPriceService
   
    # infrastructure methods
    
- end
+end
  ```
 
 ## Ссылки
-
+- [Принцип инверсии зависимости](http://blog.byndyu.ru/2009/12/blog-post.html)
 - [Технические долги](http://blog.byndyu.ru/2008/12/blog-post.html)
 - [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
 - [Rails Club 2014: Круглый стол "Где хранить бизнес-логику в RoR приложениях?"](https://www.youtube.com/watch?v=Rqa0cn_uzuc)
