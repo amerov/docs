@@ -7,6 +7,7 @@
 - Презентационная логика выносится в декораторы https://github.com/drapergem/draper
 - Скоупы выносятся в Репозитории https://github.com/paulrayner/ddd_sample_app_ruby#repository-pattern-in-ruby http://commandercoriander.net/blog/2014/10/02/isolating-active-record/
 - Бизнес логика выносится в сервис-классы 
+- User Story extract to Interactors
 
 ## The Dependency Inversion Principe
 - Высокоуровневые компоненты не должны зависеть от низкоуровневых компонент.
@@ -22,7 +23,7 @@
 - В контроллерах не пишутся запросы. все запросы в скоупах
 
 ## Хелперы
-- хелперы не должны зависеть от моделей и прочего, только чистые функции
+- хелперы не должны зависеть от моделей, стейта и прочего, только чистые функции
 
 ## View
 - в Views не должны ничего знать о модели. пример: `= form_for(User.new)` здесь view знает о модели
@@ -38,7 +39,7 @@ class ActivateUserService
   def initialize(params)
     
     # Код, который не относится к логике домена находится в конструкторе,
-    # в `replace temp with query https://sourcemaking.com/refactoring/replace-temp-with-query` и в коллбеках
+    # в `replace temp with query https://sourcemaking.com/refactoring/replace-temp-with-query`
     
     id =  params.fetch(:user_id)    
     @user = User.find(id)
@@ -87,6 +88,7 @@ class UserRegistrationInteractor
   end
 end
 ```
+
 - Servise пример:
 ```ruby
 class CalcPriceService
