@@ -48,7 +48,7 @@ class ActivateUserService
   end
     
   def call
-    # здесь находится доменная логика, которую легко прочитать и понять, что происходит
+    # здесь находится Бизнес-логика, которую легко прочитать и понять, что происходит
     if valid_user_params?
       @user.active = true
       @user.save!
